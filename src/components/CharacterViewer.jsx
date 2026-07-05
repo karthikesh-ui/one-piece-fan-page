@@ -131,7 +131,11 @@ export default function CharacterViewer({ onFinish }) {
             duration: 0.65,
             ease: [0.22, 1, 0.36, 1]
           }}
-          src={character.image}
+          src={
+            window.innerWidth <= 768
+              ? character.image
+              : character.desktop
+          }
           alt={character.name}
           className="character-bg"
         />

@@ -10,7 +10,7 @@ const characters = [
     quote: "I'm gonna become the King of the Pirates!",
     theme: "#e63946",
     gradient: "linear-gradient(180deg,#8b0000,#1a1a1a)",
-    image: "/images/luffy mobile.jpg",
+    image: "/images/luffy-mobile.jpg",
     desktop: "/images/luffy.jpg"
   },
 
@@ -25,7 +25,7 @@ const characters = [
     quote: "Nothing can stop my ambition.",
     theme: "#0f9d58",
     gradient: "linear-gradient(180deg,#063b22,#000000)",
-    image: "/images/zoro mobile.jpg",
+    image: "/images/zoro-mobile.jpg",
     desktop: "/images/zoro.jpg"
   },
 
@@ -40,7 +40,7 @@ const characters = [
     quote: "The sea is where I belong.",
     theme: "#ff8c42",
     gradient: "linear-gradient(180deg,#ff8c42,#102542)",
-    image: "/images/nami mobile.jpg",
+    image: "/images/nami-mobile.jpg",
     desktop: "/images/sami.jpg"
   },
 
@@ -55,7 +55,7 @@ const characters = [
     quote: "I'll feed anyone who's hungry.",
     theme: "#ffd60a",
     gradient: "linear-gradient(180deg,#222,#000)",
-    image: "/images/sanji mobile.jpg",
+    image: "/images/sanji-mobile.jpg",
     desktop: "/images/sanji.jpg"
   },
 
@@ -70,7 +70,7 @@ const characters = [
     quote: "I want to live.",
     theme: "#8e44ad",
     gradient: "linear-gradient(180deg,#2b103d,#000)",
-    image: "/images/robin mobile.jpg",
+    image: "/images/robin-mobile.jpg",
     desktop: "/images/robin.jpg"
   },
 
@@ -85,7 +85,7 @@ const characters = [
     quote: "I'll become a doctor who can cure anything.",
     theme: "#ff6fa5",
     gradient: "linear-gradient(180deg,#ff9fc5,#204060)",
-    image: "/images/chopper mobile.jpg",
+    image: "/images/chopper-mobile.jpg",
     desktop: "/images/chopper.jpg"
   },
 
@@ -100,10 +100,9 @@ const characters = [
     quote: "Thank you for loving me.",
     theme: "#ff5722",
     gradient: "linear-gradient(180deg,#ff5b2e,#2a0900)",
-    image: "/images/ace image.jpg",
+    image: "/images/ace-image.jpg",
     desktop: "/images/ace.jpg"
   }
-
 ];
 
 export default characters;
