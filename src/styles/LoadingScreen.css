@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap");
+
+/* ===========================
+   LOADING SCREEN
+=========================== */
+
+.loading-screen{
+
+    position:fixed;
+
+    inset:0;
+
+    width:100%;
+    height:100vh;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        to bottom,
+        #01030b,
+        #02142a,
+        #041f3e,
+        #06284b
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-family:"Poppins",sans-serif;
+
+}
+
+/* ===========================
+STARS
+=========================== */
+
+.loading-stars{
+
+    position:absolute;
+    inset:0;
+
+    background-image:
+        radial-gradient(#ffffff55 1px,transparent 1px);
+
+    background-size:90px 90px;
+
+    opacity:.25;
+
+    animation:starsMove 60s linear infinite;
+
+}
+
+@keyframes starsMove{
+
+    from{
+
+        transform:translateY(0);
+
+    }
+
+    to{
+
+        transform:translateY(-300px);
+
+    }
+
+}
+
+/* ===========================
+MOON
+=========================== */
+
+.moon{
+
+    position:absolute;
+
+    top:8%;
+
+    right:10%;
+
+    width:110px;
+
+    height:110px;
+
+    border-radius:50%;
+
+    background:#fff8d6;
+
+    box-shadow:
+
+        0 0 40px #ffffff,
+
+        0 0 90px rgba(255,255,200,.4);
+
+}
+
+/* ===========================
+OCEAN
+=========================== */
+
+.loading-ocean{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:100%;
+
+    height:32%;
+
+    background:
+
+    linear-gradient(
+
+        to top,
+
+        #041120,
+
+        #083766,
+
+        transparent
+
+    );
+
+    animation:wave 5s ease-in-out infinite;
+
+}
+
+@keyframes wave{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+SHIP
+=========================== */
+
+.ship-container{
+
+    position:absolute;
+
+    bottom:19%;
+
+    left:-260px;
+
+    animation:sail 3s linear forwards;
+
+}
+
+.sunny{
+
+    width:240px;
+
+    user-select:none;
+
+    pointer-events:none;
+
+    animation:shipFloat 3s ease-in-out infinite;
+
+}
+
+@keyframes sail{
+
+    from{
+
+        left:-260px;
+
+    }
+
+    to{
+
+        left:110%;
+
+    }
+
+}
+
+@keyframes shipFloat{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+CONTENT
+=========================== */
+
+.loading-content{
+
+    position:relative;
+
+    z-index:20;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+.loading-content h1{
+
+    font-family:"Cinzel",serif;
+
+    color:white;
+
+    font-size:3rem;
+
+    letter-spacing:5px;
+
+    margin-bottom:18px;
+
+    animation:fadeText 2s ease;
+
+}
+
+.loading-content p{
+
+    color:#d5d5d5;
+
+    font-size:1rem;
+
+    letter-spacing:2px;
+
+    margin-bottom:35px;
+
+}
+
+/* ===========================
+LOADING BAR
+=========================== */
+
+.loading-bar{
+
+    width:300px;
+
+    height:10px;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.15);
+
+}
+
+.loading-progress{
+
+    width:0;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+        to right,
+        #f5d76e,
+        #ffd447
+    );
+
+    animation:progress 3s linear forwards;
+
+}
+
+@keyframes progress{
+
+    from{
+
+        width:0;
+
+    }
+
+    to{
+
+        width:100%;
+
+    }
+
+}
+
+/* ===========================
+TEXT FADE
+=========================== */
+
+@keyframes fadeText{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+    .sunny{
+
+        width:170px;
+
+    }
+
+    .loading-content h1{
+
+        font-size:2rem;
+
+    }
+
+    .loading-content p{
+
+        font-size:.9rem;
+
+    }
+
+    .loading-bar{
+
+        width:240px;
+
+    }
+
+    .moon{
+
+        width:70px;
+
+        height:70px;
+
+    }
+
+}
+
+@media(max-width:430px){
+
+    .loading-content h1{
+
+        font-size:1.6rem;
+
+        letter-spacing:3px;
+
+    }
+
+    .loading-bar{
+
+        width:210px;
+
+    }
+
+    .sunny{
+
+        width:150px;
+
+    }
+
+}
